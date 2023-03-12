@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        Long startTime = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
         if (args.length == 0) {
             System.out.println("No args");
         } else {

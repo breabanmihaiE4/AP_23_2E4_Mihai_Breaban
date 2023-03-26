@@ -19,7 +19,6 @@ public class Main {
                                 }
                             }
                         }
-
                 )
                 .toArray(Student[]::new);
 

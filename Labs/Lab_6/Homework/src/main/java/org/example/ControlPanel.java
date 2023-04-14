@@ -3,7 +3,6 @@ package org.example;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.net.http.WebSocket;
 
 public class ControlPanel extends JPanel {
     final MainFrame frame;
@@ -34,7 +33,7 @@ public class ControlPanel extends JPanel {
     }
 
     private void saveGame(ActionEvent actionEvent) {
-       //this.frame.gameGraph.save(,"C:\\Users\\mihai\\Downloads\\AP_23_2E4_Mihai_Breaban\\Labs\\Lab_7/Graph.txt");
+        //this.frame.gameGraph.save(,"C:\\Users\\mihai\\Downloads\\AP_23_2E4_Mihai_Breaban\\Labs\\Lab_7/Graph.txt");
     }
 
     private void resetGame(ActionEvent actionEvent) {

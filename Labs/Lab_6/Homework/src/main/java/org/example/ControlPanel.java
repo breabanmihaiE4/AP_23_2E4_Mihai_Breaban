@@ -3,6 +3,8 @@ package org.example;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.*;
+
 
 public class ControlPanel extends JPanel {
     final MainFrame frame;
@@ -11,9 +13,17 @@ public class ControlPanel extends JPanel {
     JButton resetBtn = new JButton("Reset");
     JButton exitBtn = new JButton("Exit");
 
+    FileOutputStream fileOutputStream = null;
+    FileInputStream fileInputStream = null;
+
+    ObjectOutputStream writer = null;
+    ObjectInputStream reader = null;
+
+
     public ControlPanel(MainFrame frame) {
         this.frame = frame; init();
     }
+
     private void init() {
         //change the default layout manager (just for fun)
         setLayout(new GridLayout(1, 4));
@@ -27,13 +37,36 @@ public class ControlPanel extends JPanel {
         resetBtn.addActionListener(this::resetGame);
         exitBtn.addActionListener(this::exitGame);
     }
+    private void saveGame(ActionEvent actionEvent) {
+        try{
+            fileOutputStream = new FileOutputStream("Save&Load.txt");
+            writer = new ObjectOutputStream(fileOutputStream);
 
-    private void loadGame(ActionEvent actionEvent) {
-        System.out.println("Load");
+            writer.writeObject(frame.gameGraph);
+            writer.close();
+            System.out.println("am ajuns aici");
+        }
+        catch (IOException ex){
+            ex.printStackTrace();
+        }
     }
 
-    private void saveGame(ActionEvent actionEvent) {
-        //this.frame.gameGraph.save(,"C:\\Users\\mihai\\Downloads\\AP_23_2E4_Mihai_Breaban\\Labs\\Lab_7/Graph.txt");
+    private void loadGame(ActionEvent actionEvent) {
+        //System.out.println("Load");
+        try{
+            fileInputStream = new FileInputStream("Save&Load.txt");
+            reader = new ObjectInputStream(fileInputStream);
+
+            GameGraph gameGraph1 = null;
+            gameGraph1 = (GameGraph) reader.readObject();
+            frame.gameGraph = gameGraph1;
+            frame.canvas.drawExistingGraph();
+        }
+        catch (IOException ex){
+            ex.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void resetGame(ActionEvent actionEvent) {

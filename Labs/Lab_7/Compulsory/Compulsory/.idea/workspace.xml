@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd96fa35-d777-41fe-9ada-5ee6bc3eaf49" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/ConfigPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/DrawingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/DrawingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/GameGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/GameGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/LineColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/LineColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/src/main/java/org/example/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/ConfigPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/ConfigPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/ControlPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/ControlPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/DrawingPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/DrawingPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/DrawingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/DrawingPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/GameGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/GameGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/Line.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/LineColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/LineColor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab_6/Homework/target/classes/org/example/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compulsory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compulsory/Cell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compulsory/Exploration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compulsory/ExplorationMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compulsory/Robot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compulsory/SharedMemory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compulsory/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exploration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExplorationMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Robot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SharedMemory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Token.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NyXcYe2aS7pe3jRMloS8e0a7hX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/mihai/Downloads/AP_23_2E4_Mihai_Breaban/Labs/Lab_7/Compulsory",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Exploration">
+    <configuration name="Exploration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exploration" />
+      <module name="Compulsory" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Compulsory" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Exploration" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd96fa35-d777-41fe-9ada-5ee6bc3eaf49" name="Changes" comment="" />
+      <created>1680637378299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680637378299</updated>
+    </task>
+    <servers />
+  </component>
+</project>

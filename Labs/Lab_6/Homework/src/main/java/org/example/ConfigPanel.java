@@ -1,11 +1,9 @@
 package org.example;
 
 import jdk.internal.icu.util.CodePointMap;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.util.ArrayList;
 
 public class ConfigPanel extends JPanel {
     final MainFrame frame;

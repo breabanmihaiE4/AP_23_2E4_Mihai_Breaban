@@ -43,7 +43,11 @@ public class Exploration {
         exploration.robots.add(new Robot("R2D2", explorationMap, sharedMemory,  allPositions.get(2), allPositions.get(3), SIZE));
         exploration.robots.add(new Robot("Optimus Prime", explorationMap, sharedMemory,  allPositions.get(4), allPositions.get(5), SIZE));
 
+
         exploration.start();
+
+        
+        // comanda de stop/start pt robotul X???
     }
 
     private static final int SIZE = 4;

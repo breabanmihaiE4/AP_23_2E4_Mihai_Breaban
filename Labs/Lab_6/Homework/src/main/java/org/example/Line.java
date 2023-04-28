@@ -1,6 +1,8 @@
 package org.example;
 
-public class Line {
+import java.io.Serializable;
+
+public class Line implements Serializable {
 
     private LineColor lineColor = LineColor.NO_COLOR;
     private int destinationNodeId;

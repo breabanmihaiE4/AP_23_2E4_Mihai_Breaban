@@ -1,8 +1,9 @@
 package org.example;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class GameGraph {
+public class GameGraph implements Serializable {
     private static final int INVALID_NODE = -1;
     private final int numberOfNodes;
     private final Node[] nodes;
@@ -17,6 +18,10 @@ public class GameGraph {
         for (int i = 0; i < numberOfNodes; i++) {
             nodes[i] = new Node(i);
         }
+    }
+
+    public void setNodeCoordinates(int nodeId, int x, int y) {
+        this.nodes[nodeId].setCoordinates(x, y);
     }
 
     public void addLine(int firstNodeId, int secondNodeId) {
@@ -39,6 +44,14 @@ public class GameGraph {
             }
         }
         return INVALID_NODE;
+    }
+
+    public Node getNode(int nodeId) {
+        return this.nodes[nodeId];
+    }
+
+    public int getNumberOfNodes() {
+        return numberOfNodes;
     }
 
     @Override

@@ -1,10 +1,13 @@
 package org.example;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Node {
+public class Node implements Serializable {
     private final int nodeId;
+    private int x;
+    private int y;
     private final List<Line> lines = new ArrayList<>();
 
     public Node(int nodeId) {
@@ -18,6 +21,11 @@ public class Node {
         return lines;
     }
 
+    public void setCoordinates(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public void addLine(Line line) {
         lines.add(line);
     }
@@ -25,5 +33,13 @@ public class Node {
     @Override
     public String toString() {
         return String.format("\n\t\tNode(\n\t\t\tnodeID = %d, \n\t\t\tlines: %s\n\t\t)", nodeId, lines);
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }

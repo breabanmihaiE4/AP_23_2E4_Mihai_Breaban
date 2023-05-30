@@ -1,46 +1,29 @@
 package command;
 
-import java.text.DateFormat;
 import java.text.DateFormatSymbols;
+import java.text.SimpleDateFormat;
 import java.util.Currency;
 import java.util.Date;
 import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class Info {
-    public static void display(String languageTag) {
-        Locale locale = Locale.forLanguageTag(languageTag);
+    public void execute(String localeTag) {
+        Locale locale = new Locale(localeTag);
+        ResourceBundle messages = ResourceBundle.getBundle("res.Messages");
+        ResourceBundle localeMessages = ResourceBundle.getBundle("res.Messages", locale);
 
-        System.out.println(Messages.getString("info") + " " + locale);
+        System.out.println(localeMessages.getString("info") + " " + locale.getDisplayName());
+        System.out.println("Country: " + locale.getDisplayCountry() + " (" + localeMessages.getString("country") + ")");
+        System.out.println("Language: " + locale.getDisplayLanguage() + " (" + localeMessages.getString("language") + ")");
+        System.out.println("Currency: " + Currency.getInstance(locale).getCurrencyCode() + " (" + localeMessages.getString("currency") + ")");
 
-        // Display country and language
-        String country = locale.getDisplayCountry(locale);
-        String language = locale.getDisplayLanguage(locale);
-        System.out.println("Country: " + country + " (" + language + ")");
-
-        // Display currency
-        Currency currency = Currency.getInstance(locale);
-        System.out.println("Currency: " + currency.getDisplayName(locale) + " (" + currency.getCurrencyCode() + ")");
-
-        // Display week days
         DateFormatSymbols dateFormatSymbols = new DateFormatSymbols(locale);
-        String[] weekDays = dateFormatSymbols.getWeekdays();
-        System.out.print("Week Days: ");
-        for (int i = 2; i < weekDays.length; i++) {
-            System.out.print(weekDays[i] + ", ");
-        }
-        System.out.println();
+        System.out.println("Week Days: " + String.join(", ", dateFormatSymbols.getWeekdays()));
+        System.out.println("Months: " + String.join(", ", dateFormatSymbols.getMonths()));
 
-        // Display months
-        String[] months = dateFormatSymbols.getMonths();
-        System.out.print("Months: ");
-        for (String month : months) {
-            System.out.print(month + ", ");
-        }
-        System.out.println();
-
-        // Display current date
-        Date currentDate = new Date();
-        String formattedDate = DateFormat.getDateInstance(DateFormat.LONG, locale).format(currentDate);
-        System.out.println("Today: " + formattedDate);
+        SimpleDateFormat dateFormat = (SimpleDateFormat) SimpleDateFormat.getDateInstance(SimpleDateFormat.LONG, locale);
+        String today = dateFormat.format(new Date());
+        System.out.println("Today: " + today + " (" + today + ")");
     }
 }

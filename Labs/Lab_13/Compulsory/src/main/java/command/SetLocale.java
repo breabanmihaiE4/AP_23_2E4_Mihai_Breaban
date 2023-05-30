@@ -1,13 +1,13 @@
 package command;
 
 import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class SetLocale {
-    public static void set(String languageTag) {
-        Locale locale = Locale.forLanguageTag(languageTag);
+    public void execute(String localeTag) {
+        Locale locale = new Locale(localeTag);
         Locale.setDefault(locale);
-
-        String message = Messages.getString("locale.set");
-        System.out.println(message + " " + locale);
+        ResourceBundle messages = ResourceBundle.getBundle("res.Messages");
+        System.out.println(messages.getString("locale.set") + " " + locale.getDisplayName());
     }
 }
